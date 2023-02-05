@@ -9,6 +9,7 @@ html, body {
 a {
   text-decoration: none;
   color: white;
+  font-family: 'Lato', sans-serif;
 }
 
 a:hover {
@@ -26,8 +27,8 @@ a:hover {
 .page-container {
   min-height: 100%;
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3 , 1fr) ;
   gap: 10px;
 }
 
@@ -104,10 +105,16 @@ a:hover {
   height: 15%;
   border-radius: 30px;
 }
+
+.main-section > .search-bar:focus-within {
+  background-color: rgb(44 45 51);
+  border: none;
+}
 .main-section > .search-bar:hover {
   background-color: rgb(44 45 51);
   border:none;
 }
+
 .main-section > .search-bar > .left-search > p {
   color: white;
   padding-left: 15px;
@@ -131,6 +138,10 @@ a:hover {
   margin: 0;
 }
 
+/* .main-section > .search-bar > .middle-search input:focus-within {
+  background-color: rgb(44 45 51);
+  width: 100%;
+} */
 
 .main-section > .search-bar > .right-search {
   display: flex;
@@ -183,7 +194,7 @@ a:hover {
 
 
 .footer {
-  grid-row-start: 3;
+  grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: -1;
   display: flex;
@@ -203,6 +214,9 @@ a:hover {
   align-items: center;
 }
 
+.footer > .middle-foot a:first-child {
+  color: green;
+}
 
 .footer > .right-foot {
   display: flex;
