@@ -109,11 +109,11 @@ a:hover {
 
 .main-section > .search-bar:focus-within {
   background-color: rgb(44 45 51);
-  border: none;
+  border: 1px solid rgb(44 45 51);
 }
 .main-section > .search-bar:hover {
   background-color: rgb(44 45 51);
-  border:none;
+  border: 1px solid rgb(44 45 51);
 }
 
 .main-section > .search-bar > .left-search > p {
@@ -183,6 +183,7 @@ a:hover {
 .main-section > .main-buttons div {
   padding: 10px;
   background-color: rgb(44 45 51);
+  border: 1px solid rgb(44 45 51);
 }
 
 .main-section > .main-buttons div:hover {
